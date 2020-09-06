@@ -1,60 +1,226 @@
-.body-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    width: 70vw;
-    height: 100vh;
-}
-
-.grid {
-    display: flex;
-    flex-wrap: wrap;
-    width: 560px;
-    height: 560px;
-    border: solid black;
-}
-.grid div {
-    width: 20px;
-    height: 20px;
-}
-
-.pac-dot {
-    background-color: green;
-    border: 5px solid white;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-.wall {
-    background-color: black;
+:root {
+    --main-bg: hsl(281, 55%, 92%);
+    --center-bg: #9136b6;
+    --balls: #5c5b5b;
+    --string: white;
+    --center-boxshadow: 0 1.4rem 2.8rem rgba(0, 0, 0, 0.25),
+    0 1rem 1rem rgba(0, 0, 0, 0.22);
+    --ballshadow: 0 1.4rem 2.8rem rgba(0, 0, 0, 0.25),
+    0 1rem 1rem rgba(0, 0, 0, 0.22);
 }
 
-.power-pellet {
-    background-color: green;
-    border-radius: 10px;
+html {
+    /* 1rem = 10px */
+    font-size: 62.5%;
 }
 
-.blinky {
-    background-color: red;
-    border: 0px;
-}
-.pinky {
-    background-color: pink;
-    border: 0px;
-}
-.inky {
-    background-color: cyan;
-    border: 0px;
-}
-.clyde {
-    background-color: orange;
-    border: 0px;
-}
-.pac-man {
-    background-color: yellow;
-    border-radius: 10px;
+.main_div {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--main-bg);
+    display: grid;
+    place-items: center;
 }
 
-.scared-ghost {
-    background-color: aquamarine;
+.center_div {
+    width: 60%;
+    height: 60%;
+    border: 0.5rem solid var(--center-bg);
+    border-bottom-width: 5rem;
+    box-shadow: var(--center-boxshadow);
+    display: flex;
+    justify-content: center;
 }
+
+.center_div span {
+    width: 0.5rem;
+    height: 70%;
+    background-color: var(--string);
+    display: block;
+    position: relative;
+    margin: 0 2.75rem;
+}
+
+.center_div span::before {
+    content: '';
+    position: absolute;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    background-color: var(--balls);
+    bottom: 0%;
+    transform: translateX(-50%);
+    box-shadow: var(--ballshadow);
+}
+
+.center_div span:first-child, .center_div span:nth-child(2) {
+    transform-origin: top;
+    -moz-animation: leftball 2s linear infinite;
+    -o-animation: leftball 2s linear infinite;
+    -webkit-animation: leftball 2s linear infinite;
+    animation: leftball 2s linear infinite;
+}
+.center_div span:last-child, .center_div span:nth-child(6) {
+    transform-origin: top;
+    -moz-animation: leftball 2s linear 1s infinite;
+    -o-animation: leftball 2s linear 1s infinite;
+    -webkit-animation: leftball 2s linear 1s infinite;
+    animation: rightball 2s linear 1s infinite;
+}
+/*leftball KEYFRAMES STARTS*/
+@keyframes leftball {
+    0% {
+        transform: rotate(0deg)
+    }
+    20% {
+        transform: rotate(50deg)
+    }
+    50% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(0deg)
+    }
+}
+
+@-webkit-keyframes leftball {
+    0% {
+        transform: rotate(0deg)
+    }
+    20% {
+        transform: rotate(50deg)
+    }
+    50% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(0deg)
+    }
+}
+
+@-moz-keyframes leftball {
+    0% {
+        transform: rotate(0deg)
+    }
+    20% {
+        transform: rotate(50deg)
+    }
+    50% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(0deg)
+    }
+}
+
+@-ms-keyframes leftball {
+    0% {
+        transform: rotate(0deg)
+    }
+    20% {
+        transform: rotate(50deg)
+    }
+    50% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(0deg)
+    }
+}
+@-o-keyframes leftball {
+    0% {
+        transform: rotate(0deg)
+    }
+    20% {
+        transform: rotate(50deg)
+    }
+    50% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(0deg)
+    }
+}
+/*leftball KEYFRAMES ENDS*/
+
+/*rightball KEYFRAMES STARTS*/
+@keyframes rightball {
+    0% {
+        transform: rotate(0deg)
+    }
+    20% {
+        transform: rotate(-50deg)
+    }
+    50% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(0deg)
+    }
+}
+
+@-webkit-keyframes rightball {
+    0% {
+        transform: rotate(0deg)
+    }
+    20% {
+        transform: rotate(-50deg)
+    }
+    50% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(0deg)
+    }
+}
+
+@-moz-keyframes rightball {
+    0% {
+        transform: rotate(0deg)
+    }
+    20% {
+        transform: rotate(-50deg)
+    }
+    50% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(0deg)
+    }
+}
+
+@-ms-keyframes rightball {
+    0% {
+        transform: rotate(0deg)
+    }
+    20% {
+        transform: rotate(-50deg)
+    }
+    50% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(0deg)
+    }
+}
+@-o-keyframes rightball {
+    0% {
+        transform: rotate(0deg)
+    }
+    20% {
+        transform: rotate(-50deg)
+    }
+    50% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(0deg)
+    }
+}
+/*rightball KEYFRAMES ENDS*/

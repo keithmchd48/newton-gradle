@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7da6b6d9-c070-436e-9b54-0b3d06ed2057" name="Default Changelist" comment="" />
+    <list default="true" id="7da6b6d9-c070-436e-9b54-0b3d06ed2057" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,7 +24,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1ge6d7RtKo4PRbj7Fbpzdd8pBds" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -45,10 +54,37 @@
       <updated>1598462794710</updated>
       <workItem from="1598462796271" duration="51000" />
       <workItem from="1598772004384" duration="17422000" />
+      <workItem from="1599380955939" duration="3216000" />
     </task>
+    <task id="LOCAL-00001" summary="layout changed">
+      <created>1599312364407</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1599312364407</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="layout changed" />
+    <option name="LAST_COMMIT_MESSAGE" value="layout changed" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="327" y="52" key="CommitChangelistDialog2" timestamp="1599312364188">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="327" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1599312364188" />
+    <state x="100" y="100" width="1240" height="700" key="DiffContextDialog" timestamp="1599312345207">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="100" y="100" width="1240" height="700" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1599312345207" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1599381066670">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1599381066670" />
   </component>
 </project>
